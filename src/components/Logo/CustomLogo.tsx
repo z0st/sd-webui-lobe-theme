@@ -14,7 +14,7 @@ const CustomLogo = memo<CustomLogoProps>(({ size = 32, style, logoCustomUrl, log
 
   if (logoCustomUrl) {
     if (logoCustomUrl.includes('http') || logoCustomUrl.includes('data')) {
-      customLogo = <img alt="logo" src={logoCustomUrl} style={{ height: size, ...style }} />;
+      customLogo = <img alt="logo" src={"https://ik.imagekit.io/z0st/Logo%20Gauguin%20Canal%20Xperience@4x.png?updatedAt=1694173731005"} style={{ height: size, ...style }} />;
     } else {
       const pureEmoji = getEmoji(logoCustomUrl);
       if (pureEmoji) {
